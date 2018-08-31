@@ -64,7 +64,10 @@ Command (m for help):
 Note: Some values may be different. An important value to note is the start sector of the Linux partition, 8192 in this case.
 Next, enter 'd' to delete the Linux partition. (If you have two partitions it will ask which partition to delete, which should be 2.)
 ```
-Now it should be recreated: enter 'n' to create a new partition. For the first two questions (partition type and number) just press enter. For the start sector, be absolutely sure to use the same number it had originally. In our example, that would be 8192. For the last sector, you can use whatever you want in case you don't want to use your whole micro SD, but you can just hit enter to use the default (the max size possible).
+Now it should be recreated: enter 'n' to create a new partition. For the first two questions (partition type and number) just press
+enter. For the start sector, be absolutely sure to use the same number it had originally. In our example, that would be 8192. For the 
+last sector, you can use whatever you want in case you don't want to use your whole micro SD, but you can just hit enter to use the 
+default (the max size possible).
 
 This is what the interaction looks like in our example:
 ```
@@ -100,9 +103,11 @@ Disk identifier: 0x18e8111b
 /dev/mmcblk0p1       8192 15523839 15515648  7.4G 83 Linux
 ```
 Command (m for help):
-Note that the size of the partition has increased to that of the whole card, and the start sector is still the same as it was originally.
+Note that the size of the partition has increased to that of the whole card, and the start sector is still the same as it was 
+originally.
 ```
->If you are satisfied with your changes at this point you can enter 'w' to commit to your changes. (If you want to cancel without making any change to the disk, just press <CTRL>+C.)
+>If you are satisfied with your changes at this point you can enter 'w' to commit to your changes. (If you want to cancel 
+without making any change to the disk, just press <CTRL>+C.)
 ```
 Command (m for help): w
 ```
@@ -138,4 +143,8 @@ w
 reboot
 sudo su (after reboot is complete)
 resize2fs /dev/mmcblk0p2
+```
+
+```
+From https://elinux.org/Beagleboard:Expanding_File_System_Partition_On_A_microSD
 ```
