@@ -35,7 +35,9 @@ brw-rw---- 1 root disk 179, 24 Oct  2 23:09 /dev/mmcblk1boot0
 brw-rw---- 1 root disk 179, 32 Oct  2 23:09 /dev/mmcblk1boot1
 brw-rw---- 1 root disk 179,  9 Oct  2 23:09 /dev/mmcblk1p1
 ```
-This shows the μSD card (mmcblk0) and eMMC (mmcblk1), each having one partition. (You can ignore the special "boot0/1" partitions of the eMMC.) On very old systems there may be two partitions, in which case p2 should be used instead of p1 in the instructions below.
+This shows the μSD card (mmcblk0) and eMMC (mmcblk1), each having one partition. (You can ignore the special "boot0/1" 
+partitions of the eMMC.) On very old systems there may be two partitions, in which case p2 should be used instead of p1 
+in the instructions below.
 
 Examine the partitioning on your external SD card:
 
@@ -44,8 +46,8 @@ Examine the partitioning on your external SD card:
 ```
 >Then enter 'p' and you should be shown a print out like this
 
-```Command (m for help): p```
 ```
+Command (m for help): p
 Disk /dev/mmcblk0: 7.4 GiB, 7948206080 bytes, 15523840 sectors
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
