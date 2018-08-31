@@ -96,10 +96,10 @@ Disk identifier: 0x18e8111b
 ```
 >Device         Boot Start      End  Sectors  Size Id Type
 /dev/mmcblk0p1       8192 15523839 15515648  7.4G 83 Linux
-
->Command (m for help):
+```
+Command (m for help):
 Note that the size of the partition has increased to that of the whole card, and the start sector is still the same as it was originally.
-
+```
 >If you are satisfied with your changes at this point you can enter 'w' to commit to your changes. (If you want to cancel without making any change to the disk, just press <CTRL>+C.)
 ```
 Command (m for help): w
