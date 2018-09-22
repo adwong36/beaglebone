@@ -18,6 +18,12 @@ Add user to dialout group
 usermod -aG dialout <name of user>
 ```
 
+Change hostname
+```
+nano /etc/hostname > change to desired name
+nano /etc/hosts > change 127.0.1.1 <desired hostname>
+```
+
 Add ssh keys to computer
 ```
 ssh-keygen
