@@ -48,3 +48,12 @@ Removing duplicate keys
 nano ~/.ssh/known_hosts
 then remove unwanted keys/host
 ```
+
+change beaglebone broadcast socket port in /lib/systemd/system/bonescript.socket 
+```
+[Socket]
+ListenStream=80
+
+[Install]
+WantedBy=sockets.target
+```
