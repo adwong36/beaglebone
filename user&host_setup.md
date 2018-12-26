@@ -24,6 +24,16 @@ nano /etc/hostname > change to desired name
 nano /etc/hosts > change 127.0.1.1 <desired hostname>
 ```
 
+Allow ssh into device
+```
+nano /etc/ssh/sshd_config
+
+uncomment the following
+PermitRootLogin yes
+PubkeyAuthentication yes
+PasswordAuthentication yes
+```
+
 Add ssh keys to computer
 ```
 ssh-keygen
