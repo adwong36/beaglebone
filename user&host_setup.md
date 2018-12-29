@@ -57,3 +57,11 @@ ListenStream=80
 [Install]
 WantedBy=sockets.target
 ```
+
+disable beaglebone services/server
+```
+systemctl disable bonescript.service              
+systemctl disable bonescript.socket
+systemctl disable bonescript-autorun.service
+systemctl disable apache2
+```
