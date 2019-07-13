@@ -43,6 +43,11 @@ then login...
 ssh <username>@<host>
 ```
 
+ssh keysgen rsa
+```
+ssh-keygen -t rsa -b 4096 -C "email@example.com" -m PEM
+```
+
 Removing duplicate keys
 ```
 nano ~/.ssh/known_hosts
